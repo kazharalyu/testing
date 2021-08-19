@@ -47,6 +47,7 @@ elif [[ $pil = "2" ]]; then
 echo -e $purple"https://bit.ly/3ild93L"
 elif [[ $pil = "3" ]]; then
 read -p "Masukan Nomor Target Contoh:89528100123 : " nomor
+link=https://id.jagreward.com/member/verify-mobile/$nomor
 curl -s $link
 elif [[ $pil = "0" ]]; then
 echo -e $lightgreen"MAKASIH UDAH MAKAI TOOL INI"
