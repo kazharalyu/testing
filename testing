@@ -15,14 +15,10 @@ lightpurple="\e[1;35m"
 lightreed="\e[1;31m"
 lightcyan="\e[1;36m"
 
-#Tampilan Menu
-
-
-# Clear Dekstop
 
 
 
-echo
+sleep2
 echo -e ${REED}"____________________________________________________________"
 echo -e ${blue}"Youtube : Ahmad Guntur Al"
 echo -e ${purple}"Owner   : Ahmad Guntur Alfandi"
@@ -31,7 +27,7 @@ echo -e ${cyan}"admin : Captain Azka Permana"
 echo -e ${yellow}"Veteran : Muhammad El Faruq"
 echo -e ${GREEN}"Members : Alisyah, Shofietunisa, Inunk"
 echo -e ${blue}"____________________________________________________________"
-echo
+sleep 2
 
 echo -e $GREEN"1. Cracked Password"
 echo "2. Send Link Virus"
