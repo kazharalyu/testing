@@ -37,7 +37,7 @@ echo
 echo -e ${GREEN}"1. Cracked Password"
 echo "2. Send Link Virus"
 echo "3. SpamCall"
-echo -e "0. EXIT${DELETE}"
+echo -e "0. EXIT"${DELETE}
 
 read -p "Select The Menu : " pil
 
