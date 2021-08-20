@@ -52,6 +52,6 @@ curl -s $link
 elif [[ $pil = "0" ]]; then
 echo -e $lightgreen"MAKASIH UDAH MAKAI TOOL INI"
 else
-echo -e $lightgreen"Ops, Please Try Agains!!"
+echo -e $REED"Ops, Please Try Agains!!"
 fi
 
