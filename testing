@@ -10,7 +10,6 @@ purple="\033[35;1m"
 cyan="\033[36;1m"
 white="\033[37;1m"
 yellow="\033[33;1m"
-lightgreen="\e[1;32m"
 lightblue="\e[1;34m"
 lightpurple="\e[1;35m"
 lightreed="\e[1;31m"
@@ -50,8 +49,8 @@ read -p "Masukan Nomor Target Contoh:89528100123 : " nomor
 link=https://id.jagreward.com/member/verify-mobile/$nomor
 curl -s $link
 elif [[ $pil = "0" ]]; then
-echo -e $lightgreen"MAKASIH UDAH MAKAI TOOL INI"
+echo -e $blue"MAKASIH UDAH MAKAI TOOL INI"
 else
-echo -e $REED"Ops, Please Try Agains!!"
+echo "Ops, Please Try Agains!!"
 fi
 
