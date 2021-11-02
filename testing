@@ -1,52 +1,77 @@
-#firts script
+#bin/bash
+
+cowsay -f dragon ... | lolcat
+
+echo "Made With Indonesia ";
+
+echo -n "NAMA : ";
+
+read nama
+
+echo "==========================================";
+
+echo " 1) Telur Ayam Asin Rp3.500";
+
+echo " 2) Kacang Goreng 1.500";
+
+echo " 3) Keluar";
+
+echo "==========================================";
+
+echo -n " Masukkan Pilihan Anda $nama [1-3] : ";
+
+read pil
+
+echo "==========================================";
+
+if [ $pil -eq 1 ];
+
+then
+
+        echo " Anda Memilih Telur Ayam Asin";
+
+        echo -n " Mau Beli Berapa? $nama";
+
+        read porsi
+
+        let hitung=porsi*3500;
+
+        echo " Total Anda $nama = Rp. $hitung";
+
+        echo " Silahkan Anda $nama Bayar di kasir";
+
+        echo " Terima kasih Kepada $nama";
 
 
-#code warna
-REED="\033[31;1m"
-GREEN="\033[32;1m"
-DELETE="\033[0m"
-blue="\033[34;1m"
-purple="\033[35;1m"
-cyan="\033[36;1m"
-white="\033[37;1m"
-yellow="\033[33;1m"
-lightblue="\e[1;34m"
-lightpurple="\e[1;35m"
-lightreed="\e[1;31m"
-lightcyan="\e[1;36m"
+elif [ $pil -eq 2 ];
 
+then
 
+        echo " Anda Memilih Kacang Goreng ";
 
+        echo -n " Mau Beli Berapa?  $nama : ";
 
-sleep2
-echo -e ${REED}"____________________________________________________________"
-echo -e ${blue}"Youtube : Ahmad Guntur Al"
-echo -e ${purple}"Owner   : Ahmad Guntur Alfandi"
-echo -e ${purple}"Co Owner: Brother Kasyifil Aziz"
-echo -e ${cyan}"admin : Captain Azka Permana"
-echo -e ${yellow}"Veteran : Muhammad El Faruq"
-echo -e ${GREEN}"Members : Alisyah, Shofietunisa, Inunk"
-echo -e ${blue}"____________________________________________________________"
-sleep 2
+        read porsi
 
-echo -e $GREEN"1. Cracked Password"
-echo "2. Send Link Virus"
-echo "3. SpamCall"
-echo -e "0. EXIT"$DELETE
+        let hitung=porsi*1500;
 
-read -p "Select The Menu : " pil
+        echo " Total Anda $nama = Rp. $hitung";
 
-if [[ $pil = "1" ]] ;then
-echo -e $yellow"qwerty123,QWERRTY123,YTREWQ123,ytrewq123,qwerty321. (Test)"
-elif [[ $pil = "2" ]]; then
-echo -e $purple"https://bit.ly/3ild93L"
-elif [[ $pil = "3" ]]; then
-read -p "Masukan Nomor Target Contoh:89528100123 : " nomor
-link=https://id.jagreward.com/member/verify-mobile/$nomor
-curl -s $link
-elif [[ $pil = "0" ]]; then
-echo -e $blue"MAKASIH UDAH MAKAI TOOL INI"
+        echo " Silahkan Anda $nama Bayar di kasir";
+        echo " Terima kasih Kepada $nama";
+
+elif [ $pil -eq 3 ];
+
+then
+
+        exit
+
 else
-echo "Ops, Please Try Agains!!"
-fi
 
+
+echo "Pilihan Tidak Ada";
+
+        exit 1;
+
+
+fi
