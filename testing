@@ -12,7 +12,7 @@ echo "==========================================";
 
 echo " 1) Telur Ayam Asin Rp3.500";
 
-echo " 2) Kacang Goreng 1.500";
+echo " 2) Tempe Goreng Biasa 1.500";
 
 echo " 3) Keluar";
 
@@ -47,7 +47,7 @@ elif [ $pil -eq 2 ];
 
 then
 
-        echo " Anda Memilih Kacang Goreng ";
+        echo " Anda Memilih Tempe Goreng Biasa ";
 
         echo -n " Mau Beli Berapa?  $nama : ";
 
