@@ -12,9 +12,11 @@ echo "==========================================";
 
 echo " 1) Telur Ayam Asin Rp3.500";
 
-echo " 2) Tempe Goreng Biasa 1.500";
+echo " 2) Kacang Tanah 1.000";
 
-echo " 3) Keluar";
+echo " 3) Telur Ayam Kampung Rebus 3.000";
+
+echo " 4) Keluar";
 
 echo "==========================================";
 
@@ -38,29 +40,43 @@ then
 
         echo " Total Anda $nama = Rp. $hitung";
 
-        echo " Silahkan Anda $nama Bayar di kasir";
-
-        echo " Terima kasih Kepada $nama";
+        echo " Terima kasih Kepada Berbelanja Dengan Kami :) ";
 
 
 elif [ $pil -eq 2 ];
 
 then
 
-        echo " Anda Memilih Tempe Goreng Biasa ";
+        echo " Anda Memilih Kacang Tanah ";
 
         echo -n " Mau Beli Berapa?  $nama : ";
 
         read porsi
 
-        let hitung=porsi*1500;
+        let hitung=porsi*1000;
 
         echo " Total Anda $nama = Rp. $hitung";
 
-        echo " Silahkan Anda $nama Bayar di kasir";
-        echo " Terima kasih Kepada $nama";
+        echo " Terima kasih Berbelanja Dengan Kami :) ";
 
 elif [ $pil -eq 3 ];
+
+then
+
+echo " Anda Memilih Telur Ayam Kampung Rebus ";
+
+        echo -n " Mau Beli Berapa?  $nama : ";
+
+        read porsi
+
+        let hitung=porsi*3000;
+
+        echo " Total Anda $nama = Rp. $hitung";
+
+        echo " Terima kasih Berbelanja Dengan Kami :) ";
+
+
+elif [ $pil -eq 4 ];
 
 then
 
